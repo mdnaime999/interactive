@@ -7,7 +7,7 @@ import 'package:sizer/sizer.dart';
 
 import '../../../app/common/models/enum.model.dart';
 import '../../../app/common/widgets/rich.widget.dart';
-import '../../stream/models/stream.model.dart';
+import '../../dashboard/models/stream.model.dart';
 import '../controllers/tab.cont.dart';
 
 class TabContent extends StatelessWidget {

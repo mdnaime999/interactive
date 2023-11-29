@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 import '../modules/auth/route/routes.dart';
+import '../modules/dashboard/routes/routes.dart';
 import '../modules/home/route/routes.dart';
 import '../modules/profile/route/routes.dart';
 import 'dialogs/body.dialog.dart';
@@ -21,6 +22,7 @@ GetStorage db = GetStorage('store');
 List modules = [
   HomeRoutes.routes,
   AuthRoutes.routes,
+  DashboardRoutes.routes,
   ProfileRoutes.routes,
 ];
 

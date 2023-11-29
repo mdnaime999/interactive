@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 import '../../../config/dialogs/body.dialog.dart';
+import '../../dashboard/routes/routes.dart';
 import '../../drowar/models/drawer.menu.model.dart';
 import '../../home/route/routes.dart';
 import '../../profile/route/routes.dart';
@@ -23,16 +24,16 @@ class BottomMenuService extends GetxService {
       inactiveColor: Colors.grey,
     ),
     MenuModel(
-      icon: Icon(Icons.home),
-      title: "Home",
-      action: HomeRoutes.home,
+      icon: Icon(Icons.dashboard),
+      title: "Dashboard",
+      action: DashboardRoutes.dashboard,
       activeColor: Colors.indigo,
       inactiveColor: Colors.grey,
     ),
     MenuModel(
-      icon: Icon(Icons.home),
-      title: "Home",
-      action: HomeRoutes.home,
+      icon: Icon(Icons.person),
+      title: "Profile",
+      action: ProfileRoutes.userProfile,
       activeColor: Colors.indigo,
       inactiveColor: Colors.grey,
     ),
@@ -43,6 +44,7 @@ class BottomMenuService extends GetxService {
     selectedIndex.value = index;
     String? toPage = items[index].action;
     if (toPage != null && toPage != "") {
+      print(toPage);
       Get.toNamed(toPage);
     } else {
       Get.snackbar("Page Not Found", "This page is not exist");
@@ -53,7 +55,7 @@ class BottomMenuService extends GetxService {
     MDrawerMenu(
       icon: Icons.dashboard,
       title: "Dashboard",
-      action: () {},
+      action: () => Get.toNamed(DashboardRoutes.dashboard),
       clicked: false.obs,
     ),
     MDrawerMenu(

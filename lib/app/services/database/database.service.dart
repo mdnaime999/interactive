@@ -11,7 +11,7 @@ import 'package:stack_trace/stack_trace.dart';
 
 import '../../../config/api.dart';
 import '../../../modules/auth/route/routes.dart';
-import '../../../modules/stream/models/stream.model.dart';
+import '../../../modules/dashboard/models/stream.model.dart';
 import '../../common/models/auth.model.dart';
 import '../../common/models/http.headers.dart';
 import '../auth/auth.service.dart';

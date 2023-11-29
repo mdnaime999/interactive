@@ -7,7 +7,7 @@ import '../../../app/services/database/database.service.dart';
 import '../../../app/services/database/store.service.dart';
 import '../../../config/dialogs/sample.dialog.dart';
 import '../../../config/style.dart';
-import '../../stream/models/stream.model.dart';
+import '../../dashboard/models/stream.model.dart';
 import '../models/tab.model.dart';
 import '../widgets/country.widget.dart';
 
