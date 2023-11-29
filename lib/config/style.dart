@@ -5,7 +5,10 @@ import 'package:sizer/sizer.dart';
 // App
 const appThemeColor = Colors.indigo;
 
+Color drawerBg = Colors.blue.shade300;
+
 class AppStyle {
+  String companyName = "Interactive Cares";
   String logoSvgAsset = 'assets/images/svg/logo.svg';
 }
 
@@ -73,7 +76,7 @@ class LoginStyle {
     fontSize: 12.sp,
   );
 
-  String loginText3 = "Koko Account";
+  String loginText3 = "Account";
   String loginText4 = "Enter your account and password";
   String loginText5 = "Enter Your Mobile Number";
 

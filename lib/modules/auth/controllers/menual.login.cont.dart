@@ -35,12 +35,6 @@ class MenualLoginController extends GetxController {
   );
   Rx<TextEditingController> pin = TextEditingController().obs;
 
-  @override
-  void onInit() {
-    // TODO: implement onInit
-    super.onInit();
-  }
-
   Future<void> phoneSigninFun() async {
     if (phone.value.text.length >= initCountry.value.minLength && phone.value.text.length <= initCountry.value.maxLength) {
       try {

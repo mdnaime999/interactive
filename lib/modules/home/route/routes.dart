@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import '../../../app/middlewares/auth/auth.middleware.dart';
 import '../controllers/home.cont.dart';
 import '../controllers/tab.cont.dart';
 import '../views/home.view.dart';
@@ -16,9 +15,9 @@ class HomeRoutes {
       ],
       transition: Transition.fadeIn,
       transitionDuration: Duration(milliseconds: 500),
-      middlewares: [
-        AuthGuard(),
-      ],
+      // middlewares: [
+      //   AuthGuard(),
+      // ],
     ),
   ];
 }

@@ -54,6 +54,9 @@ dependencies:
   persistent_bottom_nav_bar: ^5.0.2
   shimmer: ^3.0.0
   firebase_auth: ^4.14.1
+  bottom_navy_bar: ^6.0.0
+  flutter_zoom_drawer: ^3.1.1
+  font_awesome_flutter: ^10.6.0
 
 dev_dependencies:
   flutter_test:

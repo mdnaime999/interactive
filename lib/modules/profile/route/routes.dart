@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import '../../../app/middlewares/auth/auth.middleware.dart';
 import '../views/user.profile.dart';
 
 class ProfileRoutes {
@@ -11,7 +12,9 @@ class ProfileRoutes {
       bindings: [],
       transition: Transition.fadeIn,
       transitionDuration: Duration(milliseconds: 500),
-      // middlewares: [AuthGuard()],
+      middlewares: [
+        AuthGuard()
+      ],
     ),
   ];
 }

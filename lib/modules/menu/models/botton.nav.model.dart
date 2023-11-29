@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MenuModel {
-  MenuModel({this.iconPath, this.title, this.action, this.activeColor, this.inactiveColor});
+  MenuModel({this.icon, this.title, this.action, this.activeColor, this.inactiveColor});
 
-  String? iconPath;
+  Widget? icon;
   String? title;
   String? action;
   Color? activeColor;
