@@ -1,3 +1,4 @@
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
@@ -52,5 +53,9 @@ class AuthService extends GetxService {
         Get.offAllNamed(HomeRoutes.home);
       });
     }
+  }
+
+  Future<void> cachImage(String url) async {
+    await DefaultCacheManager().getSingleFile(url);
   }
 }

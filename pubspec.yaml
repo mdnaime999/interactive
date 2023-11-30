@@ -57,6 +57,12 @@ dependencies:
   bottom_navy_bar: ^6.0.0
   flutter_zoom_drawer: ^3.1.1
   font_awesome_flutter: ^10.6.0
+  youtube_player_flutter: ^8.1.2
+  youtube_explode_dart: ^2.0.2
+  cloud_firestore: ^4.13.3
+  pull_to_refresh: ^2.0.0
+  loading_animation_widget: ^1.2.0+4
+  flutter_cache_manager: ^3.3.1
 
 dev_dependencies:
   flutter_test:

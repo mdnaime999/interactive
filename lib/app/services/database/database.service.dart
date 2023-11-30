@@ -3,6 +3,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:http/http.dart' as http;
@@ -73,8 +74,14 @@ class DatabaseService extends GetxService {
       return null;
     }
   }
-  // ----------------------------------- Error Handle
 
+  Future<QuerySnapshot> getFirestore() async {
+    FirebaseFirestore firestore = FirebaseFirestore.instance;
+    CollectionReference youtube = firestore.collection("youtube");
+    return youtube.get();
+  }
+
+  // ----------------------------------- Error Handle
   String errorHandle(String mathordName, String statusCode) {
     Map returnData = {};
     returnData['page'] = Frame.caller(1).uri.path;
